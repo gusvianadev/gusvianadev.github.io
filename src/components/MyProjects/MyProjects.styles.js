@@ -50,110 +50,119 @@ const MyProjectsSty = styled.div`
 		transform: translateY(-5%);
 		width: 80%;
 
-		& .project-card {
-			background-color: ${({ theme }) => theme.blue1};
-			border-radius: 10px;
-			height: 450px;
-			margin: 1rem 0rem;
-			padding: 0rem 0.5rem;
-			transition: all 0.5s ease;
-			width: 260px;
+		& .project-card__container {
+			flex: 1 1 33%;
+			margin-bottom: 2rem;
 
-			:hover {
-				box-shadow: 0px 0px 10px 3px ${({ theme }) => theme.light};
+			:last-child {
+				margin-bottom: 0rem;
 			}
+			& .project-card {
+				background-color: ${({ theme }) => theme.blue1};
+				border-radius: 10px;
+				height: 450px;
+				margin: auto;
+				padding: 0.5rem 0.5rem;
+				transition: all 0.5s ease;
+				width: 260px;
 
-			> * {
-				margin: 0.5rem 0rem;
-			}
-
-			& h3 {
-				text-align: center;
-				text-transform: capitalize;
-			}
-
-			& .technologies-used {
-				display: flex;
-				justify-content: space-around;
-
-				& svg {
-					font-size: 1.5em;
-					transition: filter 0.2s ease;
+				:hover {
+					box-shadow: 0px 0px 10px 3px ${({ theme }) => theme.light};
 				}
 
-				& svg:hover {
-					filter: drop-shadow(
-						0px 0px 2px ${({ theme }) => theme.light}
-					);
+				> * {
+					margin: 0.5rem 0rem;
 				}
 
-				& .tooltip {
-					display: inline-block;
-					position: relative;
-				}
-
-				& .tooltip .tooltiptext {
-					background-color: ${({ theme }) => theme.blue2};
-					border-radius: 6px;
-					box-shadow: inset 0px 0px 10px 3px
-						${({ theme }) => theme.bgColor};
-					bottom: 125%;
-					color: ${({ theme }) => theme.blue4};
-					left: 50%;
-					margin-left: -60px;
-					opacity: 0;
-					padding: 5px 0;
-					position: absolute;
+				& h3 {
 					text-align: center;
-					text-shadow: 0px 0px 11px ${({ theme }) => theme.light};
-					transition: opacity 0.2s;
-					visibility: hidden;
-					width: 120px;
-					z-index: 1;
-				}
-
-				& .tooltip .tooltiptext::after {
-					border-color: ${({ theme }) => theme.blue2} transparent
-						transparent transparent;
-					border-style: solid;
-					border-width: 5px;
-					content: '';
-					left: 50%;
-					margin-left: -5px;
-					position: absolute;
-					top: 100%;
-				}
-
-				& .tooltip:hover .tooltiptext {
-					opacity: 1;
-					visibility: visible;
-				}
-			}
-
-			& .project-links {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-between;
-
-				& a {
-					color: inherit;
-					display: block;
-					text-decoration: none;
 					text-transform: capitalize;
-					transition: text-shadow 0.2s ease;
+				}
+
+				& .technologies-used {
+					display: flex;
+					justify-content: space-around;
 
 					& svg {
-						margin-right: 0.3rem;
+						font-size: 1.5em;
 						transition: filter 0.2s ease;
 					}
 
-					:hover {
+					& svg:hover {
+						filter: drop-shadow(
+							0px 0px 2px ${({ theme }) => theme.light}
+						);
+					}
+
+					& .tooltip {
+						display: inline-block;
+						position: relative;
+					}
+
+					& .tooltip .tooltiptext {
+						background-color: ${({ theme }) => theme.blue2};
+						border-radius: 6px;
+						box-shadow: inset 0px 0px 10px 3px
+							${({ theme }) => theme.bgColor};
+						bottom: 125%;
+						color: ${({ theme }) => theme.blue4};
+						left: 50%;
+						margin-left: -60px;
+						opacity: 0;
+						padding: 5px 0;
+						position: absolute;
+						text-align: center;
 						text-shadow: 0px 0px 11px ${({ theme }) => theme.light};
+						transition: opacity 0.2s;
+						visibility: hidden;
+						width: 120px;
+						z-index: 1;
+					}
+
+					& .tooltip .tooltiptext::after {
+						border-color: ${({ theme }) => theme.blue2} transparent
+							transparent transparent;
+						border-style: solid;
+						border-width: 5px;
+						content: '';
+						left: 50%;
+						margin-left: -5px;
+						position: absolute;
+						top: 100%;
+					}
+
+					& .tooltip:hover .tooltiptext {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				& .project-links {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+
+					& a {
+						color: inherit;
+						display: block;
+						text-decoration: none;
+						text-transform: capitalize;
+						transition: text-shadow 0.2s ease;
 
 						& svg {
-							filter: drop-shadow(
-								0px 0px 2px ${({ theme }) => theme.light}
-							);
+							margin-right: 0.3rem;
+							transition: filter 0.2s ease;
+						}
+
+						:hover {
+							text-shadow: 0px 0px 11px
+								${({ theme }) => theme.light};
+
+							& svg {
+								filter: drop-shadow(
+									0px 0px 2px ${({ theme }) => theme.light}
+								);
+							}
 						}
 					}
 				}
