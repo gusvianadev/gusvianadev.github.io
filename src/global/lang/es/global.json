@@ -1,0 +1,60 @@
+{
+	"welcomeMessage": {
+		"h1": {
+			"normal": "Hola, soy ",
+			"strong": "Gustavo Viana"
+		},
+		"p": {
+			"normal": "y soy un ",
+			"strong": "Desarrollador Web Front End"
+		}
+	},
+	"navbar": {
+		"github": "GitHub",
+		"linkedin": "LinkedIn",
+		"contact": "contacto",
+		"resume": "currículum"
+	},
+	"contactForm": {
+		"title": "contactame!",
+		"userName": "tu nombre:",
+		"userMail": "tu e-mail:",
+		"userMessage": "tu mensaje: ",
+		"submitBtn": "enviar",
+		"statusMessage": {
+			"wait": "Esperando...",
+			"ok": "Gracias por contactarme!",
+			"err": "Ups, intentá de nuevo"
+		},
+		"footer": "Contacto directo"
+	},
+	"myProjects": {
+		"tag": "mis proyectos",
+		"website": "visitar página",
+		"code": "ver código",
+		"pokedex": {
+			"title": "pokédex",
+			"description": "Podés buscar un pokémon y ver todas sus estadísticas."
+		},
+		"calculator": {
+			"title": "calculadora",
+			"description": "Uno de los 5 proyectos de Librerías Front End de freeCodeCamp: maneja las operaciones matemáticas básicas: suma, resta, multiplicación y división."
+		},
+		"drumMachine": {
+			"title": "caja musical",
+			"description": "Uno de los 5 proyectos de Librerías Front End de freeCodeCamp: te deja jugar con 18 diferentes sonidos."
+		},
+		"markdownPreviewer": {
+			"title": "previsor de markdown",
+			"description": "Uno de los 5 proyectos de Librerías Front End de freeCodeCamp: podés escribir markdown y te lo va a traducir a HTML (con syntax highlight!)."
+		},
+		"randomQuoteMachine": {
+			"title": "citas aleatorias",
+			"description": "Uno de los 5 proyectos de Librerías Front End de freeCodeCamp: simplemente da citas aleatorias de distintas personas."
+		},
+		"breakClock": {
+			"title": "reloj 25 + 5",
+			"description": "Uno de los 5 proyectos de Librerías Front End de freeCodeCamp: One clock to rule them all, one clock to find them, One clock to bring them all, and in the repo bind them; In the Land of Github where the shadows lie."
+		}
+	}
+}

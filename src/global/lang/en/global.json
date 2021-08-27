@@ -1,0 +1,60 @@
+{
+	"welcomeMessage": {
+		"h1": {
+			"normal": "Hi, I'm ",
+			"strong": "Gustavo Viana"
+		},
+		"p": {
+			"normal": "and I'm a ",
+			"strong": "Front End Web Developer"
+		}
+	},
+	"navbar": {
+		"github": "GitHub",
+		"linkedin": "LinkedIn",
+		"contact": "contact",
+		"resume": "resume"
+	},
+	"contactForm": {
+		"title": "contact me!",
+		"userName": "your name:",
+		"userMail": "your e-mail:",
+		"userMessage": "your message:",
+		"submitBtn": "send",
+		"statusMessage": {
+			"wait": "Waiting...",
+			"ok": "Thank you for contacting me!",
+			"err": "Oops, please try again"
+		},
+		"footer": "Contact Info"
+	},
+	"myProjects": {
+		"tag": "my projects",
+		"website": "visit website",
+		"code": "see source",
+		"pokedex": {
+			"title": "pokédex",
+			"description": "You can search for a pokémon and see all their stats."
+		},
+		"calculator": {
+			"title": "calculator",
+			"description": "One of the five freeCodeCamp Front End Libraries projects: it can handle all basic math operations: addition, substraction, multiplication and division."
+		},
+		"drumMachine": {
+			"title": "drum machine",
+			"description": "One of the five freeCodeCamp Front End Libraries projecs: you can play with 18 sounds and have fun."
+		},
+		"markdownPreviewer": {
+			"title": "markdown previewer",
+			"description": "One of the five freeCodeCamp Front End Libraries projecs: you can write markdown and it will be translated to HTML (with code highlight!)."
+		},
+		"randomQuoteMachine": {
+			"title": "random quote machine",
+			"description": "One of the five freeCodeCamp Front End Libraries projecs: it just gives random quotes from different kinds of people while changing the background color."
+		},
+		"breakClock": {
+			"title": "25 + 5 clock",
+			"description": "One of the five freeCodeCamp Front End Libraries projecs: One clock to rule them all, one clock to find them, One clock to bring them all, and in the repo bind them; In the Land of Github where the shadows lie."
+		}
+	}
+}
