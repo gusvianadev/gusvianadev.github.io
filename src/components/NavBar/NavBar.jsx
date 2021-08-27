@@ -10,28 +10,36 @@ const NavBar = ({ contactFormRef, t }) => {
 		<NavBarSty>
 			<ul>
 				{nvItems.map(({ id, url, icon }) => (
-					<li
-						key={id}
-						onClick={() => !url && showContactForm()}
-						onKeyDown={(e) =>
-							!url && e.key === 'c' && showContactForm()
-						}
-					>
+					<li key={id}>
 						{url ? (
-							<a
-								className="navbar-item"
-								href={url}
-								target="_blank"
-								rel="noreferrer"
-							>
-								{id}
+							<>
+								<a
+									className="navbar-item"
+									href={url}
+									target="_blank"
+									rel="noreferrer"
+								>
+									{id}
+								</a>
 								<div className="navbar-bubble">{icon}</div>
-							</a>
+							</>
 						) : (
-							<div className="navbar-item">
-								{id}
+							<>
+								<div
+									className="navbar-item"
+									onClick={() => !url && showContactForm()}
+									onKeyDown={(e) =>
+										!url &&
+										e.key === 'c' &&
+										showContactForm()
+									}
+									role="button"
+									tabIndex="0"
+								>
+									{id}
+								</div>
 								<div className="navbar-bubble">{icon}</div>
-							</div>
+							</>
 						)}
 					</li>
 				))}

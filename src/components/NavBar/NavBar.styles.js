@@ -24,7 +24,8 @@ const NavBarSty = styled.nav`
 		transition: transform 0.5s ease;
 		width: 150px;
 
-		:hover {
+		:hover,
+		:active {
 			-webkit-backface-visibility: hidden;
 			-webkit-transform: translate3d(0, 0, 0);
 			-webkit-perspective: 1000;
@@ -36,64 +37,63 @@ const NavBarSty = styled.nav`
 			justify-content: space-between;
 			text-decoration: none;
 			position: relative;
+		}
+		& .navbar-bubble {
+			background: radial-gradient(
+				circle at 50% 55%,
+				rgba(163, 185, 230, 0.5),
+				rgba(104, 145, 228, 0.486) 40%,
+				rgba(53, 116, 199, 0.493) 60%,
+				rgba(43, 93, 255, 0.144)
+			);
+			border-radius: 100%;
+			-webkit-box-shadow: inset 0px 0px 39px -3px ${({ theme }) => theme.blue1},
+				4px 12px 13px -3px ${({ theme }) => theme.shadow};
+			box-shadow: inset 0px 0px 39px -3px ${({ theme }) => theme.blue1},
+				4px 12px 13px -3px ${({ theme }) => theme.shadow};
+			display: block;
+			height: 50px;
+			position: absolute;
+			right: -30%;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 50px;
 
-			& .navbar-bubble {
-				background: radial-gradient(
-					circle at 50% 55%,
-					rgba(163, 185, 230, 0.5),
-					rgba(104, 145, 228, 0.486) 40%,
-					rgba(53, 116, 199, 0.493) 60%,
-					rgba(43, 93, 255, 0.144)
-				);
-				border-radius: 100%;
-				-webkit-box-shadow: inset 0px 0px 39px -3px ${({ theme }) => theme.blue1},
-					4px 12px 13px -3px ${({ theme }) => theme.shadow};
-				box-shadow: inset 0px 0px 39px -3px ${({ theme }) => theme.blue1},
-					4px 12px 13px -3px ${({ theme }) => theme.shadow};
+			:before {
+				content: '';
 				display: block;
-				height: 50px;
+				padding-top: 100%;
+			}
+
+			:after {
+				content: '';
 				position: absolute;
-				right: -30%;
+				top: 3%;
+				left: 2%;
+				width: 100%;
+				height: 100%;
+				border-radius: 100%;
+				filter: blur(1px);
+				-webkit-filter: blur(1px);
+				z-index: 1;
+				transform: rotateZ(-30deg);
+				-webkit-transform: rotateZ(-30deg);
+				display: block;
+				background: radial-gradient(
+					circle at 50% 80%,
+					rgba(255, 255, 255, 0),
+					rgba(255, 255, 255, 0) 74%,
+					rgb(15, 58, 124) 80%,
+					rgb(22, 68, 121) 84%,
+					rgba(255, 255, 255, 0) 100%
+				);
+			}
+			& svg {
+				position: absolute;
 				top: 50%;
-				transform: translateY(-50%);
-				width: 50px;
-
-				:before {
-					content: '';
-					display: block;
-					padding-top: 100%;
-				}
-
-				:after {
-					content: '';
-					position: absolute;
-					top: 3%;
-					left: 2%;
-					width: 100%;
-					height: 100%;
-					border-radius: 100%;
-					filter: blur(1px);
-					-webkit-filter: blur(1px);
-					z-index: 1;
-					transform: rotateZ(-30deg);
-					-webkit-transform: rotateZ(-30deg);
-					display: block;
-					background: radial-gradient(
-						circle at 50% 80%,
-						rgba(255, 255, 255, 0),
-						rgba(255, 255, 255, 0) 74%,
-						rgb(15, 58, 124) 80%,
-						rgb(22, 68, 121) 84%,
-						rgba(255, 255, 255, 0) 100%
-					);
-				}
-				& svg {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					font-size: 1.5em;
-				}
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 1.5em;
 			}
 		}
 	}
