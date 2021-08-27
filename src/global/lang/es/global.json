@@ -10,10 +10,13 @@
 		}
 	},
 	"navbar": {
-		"github": "GitHub",
 		"linkedin": "LinkedIn",
+		"github": "GitHub",
 		"contact": "contacto",
-		"resume": "currículum"
+		"resume": {
+			"title": "currículum",
+			"url": "https://docs.google.com/document/d/1rOHUFKqhQyVGQyd1E7BA58aIcfzfOMfvJkmXuw-yW8g/edit?usp=sharing"
+		}
 	},
 	"contactForm": {
 		"title": "contactame!",

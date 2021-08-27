@@ -1,34 +1,36 @@
 import NavBarSty from './NavBar.styles';
 import NavBarFn from './NavBar.functions';
 
-const NavBar = ({ contactFormRef }) => {
-	const { nvItems } = NavBarFn();
+const NavBar = ({ contactFormRef, t }) => {
+	const { nvItems } = NavBarFn({ t });
 	const showContactForm = () =>
 		(contactFormRef.current.style.display = 'flex');
 
 	return (
 		<NavBarSty>
 			<ul>
-				{nvItems.map((item) => (
+				{nvItems.map(({ id, url, icon }) => (
 					<li
-						key={item.id}
-						onClick={showContactForm}
-						onKeyDown={(e) => e.key === 'c' && showContactForm()}
+						key={id}
+						onClick={() => !url && showContactForm()}
+						onKeyDown={(e) =>
+							!url && e.key === 'c' && showContactForm()
+						}
 					>
-						{item.url ? (
+						{url ? (
 							<a
 								className="navbar-item"
-								href={item.url}
+								href={url}
 								target="_blank"
 								rel="noreferrer"
 							>
-								{item.id}
-								<div className="navbar-bubble">{item.icon}</div>
+								{id}
+								<div className="navbar-bubble">{icon}</div>
 							</a>
 						) : (
 							<div className="navbar-item">
-								{item.id}
-								<div className="navbar-bubble">{item.icon}</div>
+								{id}
+								<div className="navbar-bubble">{icon}</div>
 							</div>
 						)}
 					</li>

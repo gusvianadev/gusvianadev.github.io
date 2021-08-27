@@ -13,7 +13,10 @@
 		"github": "GitHub",
 		"linkedin": "LinkedIn",
 		"contact": "contact",
-		"resume": "resume"
+		"resume": {
+			"title": "resume",
+			"url": "https://docs.google.com/document/d/1l1ChS2ioS8exADCwTxCR-ytsmfg2wnFp6T9ypRsKGZY/edit?usp=sharing"
+		}
 	},
 	"contactForm": {
 		"title": "contact me!",

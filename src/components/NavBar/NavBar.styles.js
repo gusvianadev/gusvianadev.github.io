@@ -20,9 +20,9 @@ const NavBarSty = styled.nav`
 		cursor: pointer;
 		margin: 2rem 0rem;
 		padding: 0.5rem 0rem 0.5rem 0.5rem;
-		transform: translateX(-85%);
+		transform: translateX(-94%);
 		transition: transform 0.5s ease;
-		width: 120px;
+		width: 150px;
 
 		:hover {
 			-webkit-backface-visibility: hidden;

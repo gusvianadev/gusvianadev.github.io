@@ -23,7 +23,7 @@ const App = () => {
 				<Bubbles />
 				<LangSwitch i18n={i18n} />
 				<ContactForm contactFormRef={contactFormRef} t={t} />
-				<NavBar contactFormRef={contactFormRef} />
+				<NavBar contactFormRef={contactFormRef} t={t} />
 				<div id="welcome-message">
 					<h1 className="transparent-text">
 						{t('welcomeMessage.h1.normal')}

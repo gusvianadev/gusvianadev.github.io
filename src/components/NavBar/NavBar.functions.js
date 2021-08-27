@@ -1,25 +1,25 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaUser } from 'react-icons/fa';
 
-const NavBarFn = () => {
+const NavBarFn = ({ t }) => {
 	const nvItems = [
 		{
-			id: 'LinkedIn',
+			id: t('navbar.linkedin'),
 			url: 'https://www.linkedin.com/in/gus-viana/',
 			icon: <FaLinkedin />,
 		},
 		{
-			id: 'Github',
+			id: t('navbar.github'),
 			url: 'https://github.com/gusvianadev',
 			icon: <FaGithub />,
 		},
 		{
-			id: 'contact',
+			id: t('navbar.contact'),
 			url: '',
 			icon: <FaEnvelope />,
 		},
 		{
-			id: 'resume',
-			url: 'https://docs.google.com/document/d/1rOHUFKqhQyVGQyd1E7BA58aIcfzfOMfvJkmXuw-yW8g/edit',
+			id: t('navbar.resume.title'),
+			url: t('navbar.resume.url'),
 			icon: <FaUser />,
 		},
 	];

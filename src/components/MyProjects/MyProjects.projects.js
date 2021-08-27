@@ -15,18 +15,6 @@ const projects = [
 		source: 'https://github.com/gusvianadev/pokedex/',
 		usedTech: [
 			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
-			{
 				id: 'React.JS',
 				icon: <FaReact />,
 			},
@@ -49,18 +37,6 @@ const projects = [
 		source: 'https://github.com/gusvianadev/fcc-calculator/',
 		usedTech: [
 			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
-			{
 				id: 'React.JS',
 				icon: <FaReact />,
 			},
@@ -78,18 +54,6 @@ const projects = [
 		url: 'https://gusvianadev.github.io/fcc-drum-machine/',
 		source: 'https://github.com/gusvianadev/fcc-drum-machine/',
 		usedTech: [
-			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
 			{
 				id: 'React.JS',
 				icon: <FaReact />,
@@ -112,18 +76,6 @@ const projects = [
 		source: 'https://github.com/gusvianadev/fcc-markdown-previewer/',
 		usedTech: [
 			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
-			{
 				id: 'React.JS',
 				icon: <FaReact />,
 			},
@@ -145,18 +97,6 @@ const projects = [
 		source: 'https://github.com/gusvianadev/fcc-random-quote-machine/',
 		usedTech: [
 			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
-			{
 				id: 'React.JS',
 				icon: <FaReact />,
 			},
@@ -174,18 +114,6 @@ const projects = [
 		url: 'https://gusvianadev.github.io/fcc-break-clock/',
 		source: 'https://github.com/gusvianadev/fcc-break-clock',
 		usedTech: [
-			{
-				id: 'HTML',
-				icon: <FaHtml5 />,
-			},
-			{
-				id: 'CSS',
-				icon: <FaCss3 />,
-			},
-			{
-				id: 'JavaScript',
-				icon: <FaJs />,
-			},
 			{
 				id: 'React.JS',
 				icon: <FaReact />,
