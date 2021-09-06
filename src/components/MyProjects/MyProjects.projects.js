@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3, FaJs, FaReact } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import { SiStyledComponents, SiRedux } from 'react-icons/si';
 import screenshotPokedex from './media/img/screenshot-pokedex.jpg';
 import screenshotCalculator from './media/img/screenshot-calculator.jpg';

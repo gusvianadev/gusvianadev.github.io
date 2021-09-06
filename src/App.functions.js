@@ -1,5 +1,5 @@
 import { FaGithub, FaHtml5, FaCss3, FaJs, FaReact } from 'react-icons/fa';
-import { SiStyledComponents, SiRedux } from 'react-icons/si';
+import { SiRedux } from 'react-icons/si';
 
 const AppFn = () => {
 	const mySkills = [
@@ -24,11 +24,7 @@ const AppFn = () => {
 			icon: <FaReact />,
 		},
 		{
-			name: 'Styled Components',
-			icon: <SiStyledComponents />,
-		},
-		{
-			name: 'Redux Toolkit',
+			name: 'Redux',
 			icon: <SiRedux />,
 		},
 	];
