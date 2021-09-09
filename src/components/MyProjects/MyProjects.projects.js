@@ -1,5 +1,6 @@
 import { FaReact } from 'react-icons/fa';
 import { SiStyledComponents, SiRedux } from 'react-icons/si';
+import screenshotPortfolio from './media/img/screenshot-portfolio.jpg';
 import screenshotPokedex from './media/img/screenshot-pokedex.jpg';
 import screenshotCalculator from './media/img/screenshot-calculator.jpg';
 import screenshotDrumMachine from './media/img/screenshot-drum-machine.jpg';
@@ -8,6 +9,24 @@ import screenshotRandomQuoteMachine from './media/img/screenshot-random-quote-ma
 import screenshotBreakClock from './media/img/screenshot-break-clock.jpg';
 
 const projects = [
+	{
+		id: 'portfolio',
+		screenshot: (
+			<img src={screenshotPortfolio} alt="portfolio screenshot" />
+		),
+		url: 'https://gusvianadev.github.io/',
+		source: 'https://github.com/gusvianadev/gusvianadev.github.io',
+		usedTech: [
+			{
+				id: 'React.JS',
+				icon: <FaReact />,
+			},
+			{
+				id: 'Styled Components',
+				icon: <SiStyledComponents />,
+			},
+		],
+	},
 	{
 		id: 'pokedex',
 		screenshot: <img src={screenshotPokedex} alt="pokédex screenshot" />,

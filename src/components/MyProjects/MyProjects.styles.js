@@ -9,9 +9,10 @@ const MyProjectsSty = styled.div`
 	height: 80vh;
 	left: 50%;
 	position: absolute;
-	top: ${({ isShowing }) => (isShowing ? '50%' : '140%')};
-	transform: translate(-50%, -50%);
-	transition: top 0.5s ease;
+	top: ${({ isShowing }) => (isShowing ? '50%' : '100%')};
+	transform: ${({ isShowing }) =>
+		isShowing ? 'translate(-50%, -50%)' : 'translate(-50%, 0%)'};
+	transition: top 0.3s linear, transform 0.3s linear;
 	width: 100%;
 
 	@media (min-width: 425px) {

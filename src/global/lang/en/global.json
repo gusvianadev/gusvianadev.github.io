@@ -35,6 +35,10 @@
 		"tag": "my projects",
 		"website": "visit website",
 		"code": "see source",
+		"portfolio": {
+			"title": "this portfolio",
+			"description": "This (no, not the keyword, you're safe here)."
+		},
 		"pokedex": {
 			"title": "pokédex",
 			"description": "You can search for a pokémon and see all their stats."
