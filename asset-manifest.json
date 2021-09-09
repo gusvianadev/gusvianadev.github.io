@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.a0276588.chunk.js",
-    "main.js.map": "/static/js/main.a0276588.chunk.js.map",
+    "main.js": "/static/js/main.0df58742.chunk.js",
+    "main.js.map": "/static/js/main.0df58742.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d0605945.js",
     "runtime-main.js.map": "/static/js/runtime-main.d0605945.js.map",
     "static/js/2.70e23ea5.chunk.js": "/static/js/2.70e23ea5.chunk.js",
@@ -15,11 +15,12 @@
     "static/media/screenshot-drum-machine.7ae2b64e.jpg": "/static/media/screenshot-drum-machine.7ae2b64e.jpg",
     "static/media/screenshot-markdown-previewer.8c9b4fc8.jpg": "/static/media/screenshot-markdown-previewer.8c9b4fc8.jpg",
     "static/media/screenshot-pokedex.300889e3.jpg": "/static/media/screenshot-pokedex.300889e3.jpg",
+    "static/media/screenshot-portfolio.ad5c0acb.jpg": "/static/media/screenshot-portfolio.ad5c0acb.jpg",
     "static/media/screenshot-random-quote-machine.d8ad0207.jpg": "/static/media/screenshot-random-quote-machine.d8ad0207.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d0605945.js",
     "static/js/2.70e23ea5.chunk.js",
-    "static/js/main.a0276588.chunk.js"
+    "static/js/main.0df58742.chunk.js"
   ]
 }
