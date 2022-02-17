@@ -1,5 +1,5 @@
 import { FaGithub, FaHtml5, FaCss3, FaJs, FaReact } from 'react-icons/fa';
-import { SiRedux } from 'react-icons/si';
+import { SiRedux, SiTypescript } from 'react-icons/si';
 
 const AppFn = () => {
 	const mySkills = [
@@ -18,6 +18,10 @@ const AppFn = () => {
 		{
 			name: 'JavaScript',
 			icon: <FaJs />,
+		},
+		{
+			name: 'TypeScript',
+			icon: <SiTypescript />,
 		},
 		{
 			name: 'React.JS',
